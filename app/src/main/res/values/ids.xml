@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dateTextView" type="id" />
+    <item name="messageTextView" type="id" />
+    <item name="userTextView" type="id" />
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendChatMessage"
+        android:layout_width="123dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:drawableRight="@drawable/ic_send_black_24dp"
+        android:hint="Send message"
+        android:text="send message"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:backgroundTint="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/connectToChatRoom" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/connectToChatRoom"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="121dp"
+        android:layout_height="64dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button"
+        android:drawableTop="@drawable/ic_wifi_tethering_black_24dp"
+        android:text="connect"
+        android:textColor="@color/design_default_color_background"
+        android:textStyle="bold"
+        app:backgroundTint="#009688"
+        app:layout_constraintBottom_toTopOf="@+id/sendChatMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ipAddressEditText"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="#8BC34A"
+        app:layout_constraintBottom_toTopOf="@+id/connectToChatRoom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ipAddressEditText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_edittext_login"
+        android:ems="10"
+        android:hint="Enter IP address"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/connectToChatRoom"
+        app:layout_constraintEnd_toStartOf="@+id/connectToChatRoom"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_edittext_login"
+        android:ems="10"
+        android:hint="Write your name and message"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sendChatMessage"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
