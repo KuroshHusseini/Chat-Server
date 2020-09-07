@@ -1,4 +1,4 @@
-# Kotlinapplication
+# Chat Server
 TCP Chat Server and Client in Android Studio
 This is a simple chat server that uses TCP connections. Chat server and client is created with Intellij and android studio.  
 • Application uses socket object to provide a connection to the server and create a connection for the android client. 
